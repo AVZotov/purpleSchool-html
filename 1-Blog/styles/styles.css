@@ -1,0 +1,44 @@
+.main {
+  background-color: #374151;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.header a {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#blog {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.gray {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.articleHero {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.article {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.article a {
+  color: #FFFFFF;
+}
+
+.footer {
+  opacity: 0.6;
+  font-size: 16px;
+}
