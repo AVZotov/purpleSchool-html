@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Register</title>
+</head>
+<body>
+<main class="main-container">
+  <form class="register-form">
+    <div class="form-header">
+      <h1 class="form-title">Регистрация</h1>
+      <p class="form-subtitle">
+        Уже есть аккаунт? <a href="#">Войти</a>
+      </p>
+    </div>
+    <div class="form-inputs">
+      <div>
+        <label>
+          <input type="text" name="my_company" class="form-input" placeholder="Моя компания" required>
+        </label>
+      </div>
+      <div class="form-row">
+        <label>
+          <input type="text" name="name" class="form-input-name" placeholder="Имя" required>
+        </label>
+        <label>
+          <input type="text" name="surname" class="form-input-surname" placeholder="Фамилия" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="email" name="email" class="form-input" placeholder="E-mail" required>
+        </label>
+      </div>
+      <div>
+        <button class="form-button">Зарегистрироваться</button>
+      </div>
+      <div class="form-agreement">
+        <input type="checkbox" id="agreement">
+        <label for="agreement">
+          Я прочитал и принимаю <a href="#">Условия использования</a>
+        </label>
+      </div>
+    </div>
+  </form>
+</main>
+
+</body>
+</html>
