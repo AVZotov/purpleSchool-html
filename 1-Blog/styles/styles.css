@@ -1,108 +1,170 @@
-.blog {
-  margin: 71px 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
-  background-color: #374151;
+}
+
+body, html {
+  width: 100vw;
+  height: 300vh;
   font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
+  font-optical-sizing: auto;
   font-weight: 400;
-}
-
-.gray {
-  font-size: 14px;
-  opacity: 0.6;
-}
-
-.blog-header {
-  margin-bottom: 69px;
-}
-
-.blog-header a {
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   font-size: 16px;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  padding: 80px 180px 0 180px;
+}
+
+.wrapper a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.blog-header-logo a{
-  font-size: 18px;
+.header {
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: nowrap;
 }
 
-.blog-header nav ul {
-  list-style-type: none;
-  margin: 0;
+.header-logo {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.125rem;
+  gap: 11px;
+  margin-right: auto;
+}
+
+.header-logo-frame {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #4B5563;
+  border-radius: 3px;
+  padding: 6px 0;
+  gap: 16px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
   padding: 0;
+  gap: 44px;
 }
 
-.blog-main {
-  margin: 0 0 103px 0;
+.header-search {
+  display: flex;
+  margin-left: auto;
 }
 
-.blog-main header {
-  margin: 0 0 28px 0;
+.header-search input {
+  border: none;
+  background-color: rgba(31, 41, 55, 0.6);
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: left 10px center;
+  color: #fff;
+  border-radius: 100px;
+  height: 40px;
+  width: 224px;
+  padding-left: 40px;
 }
 
-.blog-main-header p {
-  margin: 0 0 14px 0;
+.header-search::placeholder {
+  color: rgba(255, 255, 255, 1)
 }
 
-.blog-main-header h1 {
-  margin: 0 0 30px 0;
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
 }
 
-.blog-main-header-logo {
-  margin: 0 0 0 0;
+.main-header-date {
+  opacity: 0.6;
+  font-size: 0.875rem;
+  height: 1rem;
+  margin-bottom: 0.875rem;
 }
 
-.blog-main-header-logo img {
-  height: 50px;
-  width: 50px;
+.main-header-title {
+  margin-bottom: calc(2rem - 2px);
+}
+
+.main-header-title h1 {
+  line-height: 2.375rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.main-header-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: calc(2rem - 4px);
+}
+
+.main-header-author img {
+  width: 3.125rem;
+  height: 3.125rem;
   border-radius: 50%;
 }
 
-.blog-main-header-logo p {
-  margin: 0;
+.main-header-credentials {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  line-height: 1.75rem;
 }
 
-.blog-main article p {
- margin: 0;
+.main-header-credentials div:last-child {
+  opacity: 0.6;
+  font-size: 0.875rem;
 }
 
-.blog-main-article-figure{
-  margin: 0 0 69px 0;
+.main-figure img {
+  width: 56rem;
+  height: 37.125rem;
+  margin-bottom: 4.375rem;
 }
 
-.blog-main-article-figure img {
-  width: 896px;
-  height: 594px;
-  opacity: 1;
-  top: 397px;
-  left: 272px;
-  border-radius: 5px;
+.main-article {
+  margin: 0 16rem;
+  text-align: start;
 }
 
-.blog-main-article-figure p {
-  margin: 0;
+.main-article section:first-child {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
 }
 
-.articleHero {
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 30px;
-}
-
-.article {
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.article p:first-of-type {
-  margin-bottom: 16px;
-}
-
-.article a {
-  color: #FFFFFF;
+.main-article section:not(:first-child) {
+  line-height: 1.875rem;
+  margin-bottom: 6.25rem;
 }
 
 .footer {
-  font-size: 16px;
-  margin: 0 0 77px 0;
+  text-align: center;
+  opacity: 0.6;
 }
